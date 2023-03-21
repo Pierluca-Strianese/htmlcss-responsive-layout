@@ -2,6 +2,7 @@
 	--primary-color: #9792E4;
 	--backgroud: #B5DDFF;
 	--text-color: black;
+    --logo-color: #3982F5;
 }
 
 * {
@@ -13,8 +14,8 @@
 .container {
     display: flex;
     margin: auto;
-    padding: 2rem 0;
-    max-width: 1000px;
+    padding: 4rem 0;
+    max-width: 800px;
     height: 100%;
 }
 
@@ -31,14 +32,38 @@ h3 {
     margin: 2rem 0;
 }
 
+h4 {
+    font-weight: bold;
+    margin: 1rem 0;
+    color: var(--logo-color);
+}
+
 .btn {
     border-radius: 9rem;
     padding: .5em 1em;
+    width: fit-content;
+    height: fit-content
 }
 
 .btn-white {
     background-color: white;
     color: black;
+}
+
+.btn-blue {
+    background-color: var(--logo-color);
+    color: white;
+    padding: .5rem 3rem;
+}
+
+.btn-circle {
+    background-color: var(--primary-color);
+    font-size: .8rem;
+    color: black;
+    border-radius: 50%;
+    padding: .8rem;
+    width: fit-content;
+    margin: auto;
 }
 
 main section:nth-child(even) {
@@ -97,23 +122,67 @@ main .container.grid {
 }
 
 .cell {
-	flex-basis: calc((100% - 2 * 1rem) / 3);
+	width: calc((100% - 2 * 1rem) / 3);
 }
 
 .cell-hero {
-	flex-basis: calc(2 * ((100% - 2 * 1rem) / 3) + 1rem);
+	width: calc(2 * ((100% - 2 * 1rem) / 3) + 1rem);
 }
 
-.content {
-    border-radius: 1rem;
+.cell.cell-hero .content {
+    display: flex;
+    text-align: left;
 }
+
+.cell.cell-hero i {
+    font-size: 1rem;
+}
+
+.cell .content {
+    text-align: center;
+    padding: 1rem 1.5rem 2rem 1.5rem;
+    border-radius: 1rem;
+    background-color: var(--backgroud);
+}
+
+.cell .content .text {
+    width: 50%;
+}
+
+.cell .content .text p {
+    margin-bottom: 2rem;
+}
+
+.grid .cell .content img {
+    width: 50%;
+    padding-left: 2rem;
+    margin-bottom: -2rem;
+}
+
+.logo-content {
+    font-size: 3rem;
+    color: var(--logo-color);
+    margin: 1rem 0 .5rem 0;
+}
+
+/* PLANNING */
 
 main .container.planning {
+    display: flex;
+    align-items: end;
     width: 600px;
 }
 
+.planning .cell {
+    width: 50%;
+}
+
 .planning img {
-    width: 100%;
+    width: 80%;
+}
+
+.planning .cell {
+    color: white;
 }
 
 .planning .cells {
@@ -122,6 +191,30 @@ main .container.planning {
     justify-content: center;
     align-items: end;
 }
+
+.planning .cell .content {
+    background-color: white;
+    color: black;
+    padding: .5rem 1rem 1.5rem 1rem;
+    margin: 0 2rem;
+    font-style: italic;
+}
+
+.planning .content img {
+    width: 70%;
+}
+
+.planning .content h4 {
+    font-style: normal;
+    color: black;
+}
+
+.planning p {
+    padding-bottom: 2rem;
+    font-size: .8rem;
+}
+
+/* PARTNERS */
 
 main .container.partners {
     display: block;

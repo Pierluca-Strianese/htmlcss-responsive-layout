@@ -13,14 +13,14 @@
     background-color: green;
 } */
 
-.cell .content {
+/* .cell .content {
 	height: 200px;
-}
+} */
 
-.cell:nth-child(odd) .content {
+/* .cell:nth-child(odd) .content {
 	background-color: salmon;
 }
 
 .cell:nth-child(even) .content {
 	background-color: gold;
-}
+} */
