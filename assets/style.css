@@ -11,6 +11,10 @@
 	box-sizing: border-box;
 }
 
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
 .container {
     display: flex;
     margin: auto;
@@ -157,7 +161,7 @@ main .container.grid {
 .grid .cell .content img {
     width: 50%;
     padding-left: 2rem;
-    margin-bottom: -2rem;
+    margin-bottom: -1rem;
 }
 
 .logo-content {
