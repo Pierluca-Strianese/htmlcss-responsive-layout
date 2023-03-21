@@ -58,6 +58,7 @@ h4 {
 
 .btn-circle {
     background-color: var(--primary-color);
+    aspect-ratio: 1;
     font-size: .8rem;
     color: black;
     border-radius: 50%;
@@ -140,7 +141,7 @@ main .container.grid {
 
 .cell .content {
     text-align: center;
-    padding: 1rem 1.5rem 2rem 1.5rem;
+    padding: 1rem 1.5rem;
     border-radius: 1rem;
     background-color: var(--backgroud);
 }
@@ -221,18 +222,51 @@ main .container.partners {
     text-align: center;
 }
 
+.partners h2 {
+    color: var(--primary-color);
+    font-size: 2rem;
+}
+
 .partners .cells {
     display: block;
     margin: 1rem 0;
 }
 
-.partners .cells .content{
+.partners .cell {
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.partners .cells .content {
+    background-color: var(--primary-color);
+    display: flex;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    align-items: center;
     border-radius: 2rem;
 }
+
+.partners .cells .content .circle-img img {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.partners .cell .content p {
+    color: white;
+    margin-left: 2rem;
+    margin-top: 1rem;
+    text-align: left;
+}
+
+/* BENEFIT */
 
 .container.benefits {
     display: block;
 }
+
+/* ABOUTUS */
 
 .aboutus .aboutus-description {
     width: calc(70% - 1rem);
