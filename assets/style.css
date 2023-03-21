@@ -38,6 +38,7 @@ h3 {
 
 h4 {
     font-weight: bold;
+    font-size: 1.3rem;
     margin: 1rem 0;
     color: var(--logo-color);
 }
@@ -113,9 +114,28 @@ header .container {
     padding: 0rem;
 }
 
+@media (max-width: 810px) {
+    header .container {
+        padding: 0 2rem;
+    }
+
+    header .menu {
+        display: none;
+    }
+
+    header .container .menu-hamburger {
+        display: block;
+    }
+}
+
 .menu {
     display: flex;
     align-items: center;
+}
+
+header .container .menu-hamburger {
+    display: none;
+    font-size: 2rem;
 }
 
 .menu div {
@@ -163,6 +183,7 @@ main .container.grid {
 }
 
 .cell .content {
+    height: 100%;
     text-align: center;
     padding: 1rem 1.5rem;
     border-radius: 1rem;
@@ -184,10 +205,31 @@ main .container.grid {
 }
 
 .logo-content {
-    font-size: 3rem;
+    font-size: 4rem;
     color: var(--logo-color);
     margin: 1rem 0 .5rem 0;
 }
+
+@media (max-width: 810px) {
+
+    .container {
+        padding: 3rem 3rem;
+    }
+    
+    .cell.cell-hero .content {
+        display: block;
+    }
+
+    .cell .content .text {
+        width: 100%;
+    }
+
+    .grid .cell .content img {
+        width: 50%;
+        padding-left: 2rem;
+        margin-top: 2rem;
+        margin-bottom: -1rem;
+    }
 
 /* PLANNING */
 
@@ -236,6 +278,25 @@ main .container.planning {
 .planning p {
     padding-bottom: 2rem;
     font-size: .8rem;
+}
+
+@media (max-width: 810px) {
+    main .container.planning {
+        display: block;
+        width: 100%;
+    }
+
+    .planning img {
+        width: 100%;
+    }
+
+    .planning .cell {
+        margin: auto;
+    }
+
+    .planning h2 {
+        font-size: 2.5rem;
+    }
 }
 
 /* PARTNERS */
