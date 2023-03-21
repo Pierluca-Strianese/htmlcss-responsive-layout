@@ -60,6 +60,12 @@ h4 {
     padding: .5rem 3rem;
 }
 
+.btn-violet {
+    background-color: var(--primary-color);
+    color: white;
+    padding: .5rem 2rem;
+}
+
 .btn-circle {
     background-color: var(--primary-color);
     aspect-ratio: 1;
@@ -69,6 +75,13 @@ h4 {
     padding: .8rem;
     width: fit-content;
     margin: auto;
+}
+
+.circle-img img {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    object-fit: cover;
 }
 
 main section:nth-child(even) {
@@ -250,13 +263,6 @@ main .container.partners {
     border-radius: 2rem;
 }
 
-.partners .cells .content .circle-img img {
-    width: 130px;
-    height: 130px;
-    border-radius: 50%;
-    object-fit: cover;
-}
-
 .partners .cell .content p {
     color: white;
     margin-left: 2rem;
@@ -270,13 +276,82 @@ main .container.partners {
     display: block;
 }
 
+.benefits h2 {
+    color: white;
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.benefits .cell .content {
+    background-color: white;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    text-align: left;
+}
+
+.benefits .cell .content .title {
+    color: var(--primary-color);
+    margin: 1rem 0;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.benefits .cell .content p {
+    margin: 2rem 0;
+}
+
+.benefits .cell .content h5 {
+    color: var(--primary-color);
+    font-size: 3rem;
+}
+
 /* ABOUTUS */
 
 .aboutus .aboutus-description {
     width: calc(70% - 1rem);
+    padding: 2rem;
+}
 
+.aboutus h2 {
+    margin-top: 0;
+    color: var(--primary-color);
+    font-size: 3rem;
+}
+
+.aboutus p {
+    margin-bottom: 2rem;
 }
 
 .aboutus .aboutus-image {
     width: calc(30% - 1rem);
+}
+
+.aboutus .aboutus-image{
+    position: relative;
+}
+
+.aboutus .aboutus-image img {
+    margin-bottom: 1rem;
+}
+
+.aboutus .aboutus-image .apici {
+    position: absolute;
+    right: 5rem;
+    font-size: 3rem;
+    color: var(--primary-color);
+}
+
+.aboutus .quote {
+    color: var(--primary-color);
+    font-size: 1.5rem;
+}
+
+.aboutus .btn {
+    padding: .2rem 1rem;
+    font-size: .7rem;
+}
+
+.aboutus .btn i {
+    margin-right: 1em;
 }
