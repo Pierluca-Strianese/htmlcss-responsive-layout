@@ -18,7 +18,7 @@ body {
 .container {
     display: flex;
     margin: auto;
-    padding: 4rem 0;
+    padding: 3rem 0;
     max-width: 800px;
     height: 100%;
 }
@@ -86,6 +86,11 @@ h4 {
 
 main section:nth-child(even) {
     background-color: var(--primary-color);
+}
+
+.light {
+    font-weight: lighter;
+    font-size: .8rem;
 }
 
 /* HEADER */
@@ -354,4 +359,47 @@ main .container.partners {
 
 .aboutus .btn i {
     margin-right: 1em;
+}
+
+/* STARTED */
+
+.container.started {
+    display: block;
+    text-align: center;
+    width: 500px;
+    color: white;
+}
+
+.started .simple {
+    font-size: 2rem;
+    margin: 1rem 0;
+}
+
+.started .free {
+    font-size: 3.5rem;
+    margin: 1.5rem 0;
+    color: orange;
+}
+
+.started .btn {
+    margin: 1rem 0;
+}
+
+.started .description {
+    margin: auto;
+    width: 300px;
+    font-size: .8rem;
+}
+
+.started .btn {
+    margin: auto;
+    color: var(--primary-color);
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    padding: 1rem 4rem;
+}
+
+.started .copyright {
+    font-size: .7rem;
+    padding: 1rem 0;
 }
