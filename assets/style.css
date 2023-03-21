@@ -10,61 +10,82 @@
 	box-sizing: border-box;
 }
 
-.grid {
-        --gapx: 1rem;
-        --gapy: 2rem;
-}
-
 .container {
     display: flex;
     margin: auto;
-    max-width: 800px;
+    padding: 2rem 0;
+    max-width: 1000px;
     height: 100%;
 }
 
-.container-menu {
-    padding: 1rem;
-    border-radius: 3rem;
+a {
+    text-decoration: none;
+    color: white;
+}
+
+h2 {
+    margin: 2rem 0;
+}
+
+h3 {
+    margin: 2rem 0;
+}
+
+.btn {
+    border-radius: 9rem;
+    padding: .5em 1em;
+}
+
+.btn-white {
+    background-color: white;
+    color: black;
+}
+
+main section:nth-child(even) {
+    background-color: var(--primary-color);
 }
 
 /* HEADER */
 
 header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
     background-color: #0084FD;
+    color: white;
     height: 70px;
 }
 
 header .container {
     align-items: center;
     justify-content: space-between;
-}
-
-.navbar {
-    text-align: auto;
-    display: flex;
-    align-items: center;
+    height: 100%;
+    padding: 0rem;
 }
 
 .menu {
     display: flex;
     align-items: center;
-    height: 100%;
 }
 
 .menu div {
-    margin-left: 1rem;
+    margin-left: 1.5rem;
 }
 
 /* MAIN */
 
-main .container {
+main {
+    margin-top: 70px;
+}
+
+main .container.grid {
     display: block;
 }
 
 .cells {
 	display: flex;
 	flex-wrap: wrap;
-	background-color: red;
 }
 
 .grid {
@@ -72,14 +93,59 @@ main .container {
 }
 
 .cells {
-	margin: 0 calc(-1 * var(--gapx) / 2) calc(-1 * var(--gapy));
+	gap: 2rem 1rem;
 }
 
 .cell {
-	flex-basis: 33.3333%;
-	padding: 0 calc(var(--gapx) / 2) var(--gapy);
+	flex-basis: calc((100% - 2 * 1rem) / 3);
 }
 
 .cell-hero {
-	flex-basis: 66.6666%;
+	flex-basis: calc(2 * ((100% - 2 * 1rem) / 3) + 1rem);
+}
+
+.content {
+    border-radius: 1rem;
+}
+
+main .container.planning {
+    width: 600px;
+}
+
+.planning img {
+    width: 100%;
+}
+
+.planning .cells {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+
+main .container.partners {
+    display: block;
+    text-align: center;
+}
+
+.partners .cells {
+    display: block;
+    margin: 1rem 0;
+}
+
+.partners .cells .content{
+    border-radius: 2rem;
+}
+
+.container.benefits {
+    display: block;
+}
+
+.aboutus .aboutus-description {
+    width: calc(70% - 1rem);
+
+}
+
+.aboutus .aboutus-image {
+    width: calc(30% - 1rem);
 }

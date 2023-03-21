@@ -1,17 +1,17 @@
-.menu div {
+/* .menu div {
     background: black;
     border: 1px solid white;
     width: 40px;
     height: 30px;
-}
+} */
 
-.container {
+/* .container {
     background-color: salmon;
-}
+} */
 
-main .container {
+/* main .container {
     background-color: green;
-}
+} */
 
 .cell .content {
 	height: 200px;
