@@ -100,6 +100,7 @@ header {
     top: 0;
     left: 0;
     right: 0;
+    z-index: 99;
     background-color: #0084FD;
     color: white;
     height: 70px;
