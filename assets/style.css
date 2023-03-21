@@ -386,7 +386,7 @@ main .container.partners {
     margin: 1rem 0;
 }
 
-.started .description {
+.description {
     margin: auto;
     width: 300px;
     font-size: .8rem;
@@ -404,3 +404,22 @@ main .container.partners {
     font-size: .7rem;
     padding: 1rem 0;
 }
+
+/* FOOTER */
+
+footer {
+    background-color: #333333;
+    color: white;
+}
+
+footer p {
+    text-align: center;
+    padding: 1.5rem 0;
+    font-size: .6rem;
+}
+
+footer a {
+    color: var(--primary-color);
+    text-decoration: underline;
+}
+
