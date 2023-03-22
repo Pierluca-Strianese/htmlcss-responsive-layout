@@ -230,6 +230,7 @@ main .container.grid {
         margin-top: 2rem;
         margin-bottom: -1rem;
     }
+}
 
 /* PLANNING */
 
@@ -241,15 +242,13 @@ main .container.planning {
 
 .planning .cell {
     width: 50%;
+    color: white;
 }
 
 .planning img {
     width: 80%;
 }
 
-.planning .cell {
-    color: white;
-}
 
 .planning .cells {
     width: 50%;
@@ -291,7 +290,7 @@ main .container.planning {
     }
 
     .planning .cell {
-        margin: auto;
+        width: 100%;
     }
 
     .planning h2 {
@@ -373,6 +372,13 @@ main .container.partners {
     font-size: 3rem;
 }
 
+@media (max-width: 810px) {
+
+    .benefits .cell {
+        width: calc(100% / 2 - 1rem);
+    }
+}
+
 /* ABOUTUS */
 
 .aboutus .aboutus-description {
@@ -394,17 +400,14 @@ main .container.partners {
     width: calc(30% - 1rem);
 }
 
-.aboutus .aboutus-image{
-    position: relative;
-}
-
 .aboutus .aboutus-image img {
+    position: relative;
     margin-bottom: 1rem;
 }
 
 .aboutus .aboutus-image .apici {
     position: absolute;
-    right: 5rem;
+    right: 2rem;
     font-size: 3rem;
     color: var(--primary-color);
 }
